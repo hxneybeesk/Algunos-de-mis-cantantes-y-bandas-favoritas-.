@@ -1,0 +1,70 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv0"Content-Type" content="text/html; charset=iso-8859-1" />
+<title> Untitled Document </title>
+<style type="text/css">
+<!--
+body {
+                       background-color: #CCCFFC;
+}
+a: link {
+            color:  #000000;
+}
+body,td,th {
+            color: #000000;
+            font-size: 16px;
+}
+-->
+</style></head>
+<body> 
+
+ <ul>
+    <li><a href="#" id="macdemarco">Mac deMarco</a></li>
+    <li><a href="#" id="bhavi">Bhavi</a></li>
+    <li><a href="#" id="tvgirl">TV Girl</a></li>
+    <li><a href="#" id="kanyewest">Kanye West</a></li>
+    <li><a href="#" id="zoe">Zoé</a></li>
+    <li><a href="#" id="gustavocerati">Gustavo Cerati</a></li>
+    <li><a href="#" id="tylerthecreator">Tyler the Creator</a></li>
+    <li><a href="#" id="newjeans">New Jeans</a></li>
+  </ul>
+<ul>
+ 
+</ul>
+
+<!-- Contenido de cada sección -->
+  <div id="contenido">
+    <!-- Aquí se mostrará el contenido dinámicamente -->
+  </div>
+
+  <script>
+    // Obtener los elementos del menú
+    var macdemarco = document.getElementById("macdemarco");
+    var bhavi = document.getElementById("bhavi");
+    var tvgirl = document.getElementById("tvgirl");
+    var kanyewest = document.getElementById("kanyewest");
+    var zoe = document.getElementById("zoe");
+    var gustavocerati = document.getElementById("gustavocerati");
+    var tylerthecreator = document.getElementById("tylerthecreator");
+    var newjeans = document.getElementById("newjeans");
+    
+    // Agregar eventos de clic para cada elemento del menú
+    macdemarco.addEventListener("click", mostrarContenido);
+    bhavi.addEventListener("click", mostrarContenido);
+    tvgirl.addEventListener("click", mostrarContenido);
+    kanyewest.addEventListener("click", mostrarContenido);
+    zoe.addEventListener("click", mostrarContenido);
+    gustavocerati.addEventListener("click", mostrarContenido);
+    tylerthecreator.addEventListener("click", mostrarContenido);
+    newjeans.addEventListener("click", mostrarContenido);
+    
+    // Función para mostrar el contenido correspondiente al hacer clic
+    function mostrarContenido(event) {
+      event.preventDefault(); // Evitar comportamiento predeterminado del enlace
+      
+      var contenido = document.getElementById("contenido");
+      contenido.innerHTML = "Mostrando contenido de " + event.target.textContent;
+    }
+  </script>
+</body>
+</html>
